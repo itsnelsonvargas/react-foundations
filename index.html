@@ -16,12 +16,21 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         
         <script type="text/jsx">
+             
+           
 
             // Use ReactDOM.createRoot() to target a specific DOM element and create a root to display your React Components in.
             // Add the root.render() method to render your React code to the DOM.
             const app = document.getElementById('app');
+
+            //React components should be capitalized to distinguish them from plain HTML and JavaScript:
+            function Header() {
+                return <h1>Develop. Preview. Ship.</h1>;
+            }
+
+
             const root = ReactDOM.createRoot(app);
-            root.render(<h1>Develop. Preview. Ship.</h1>);
+            root.render(<Header />);
 
         </script>
 
