@@ -13,21 +13,13 @@
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
         <script type="text/javascript">
-            // Select the div element with 'app' id
+
+            // Use ReactDOM.createRoot() to target a specific DOM element and create a root to display your React Components in.
+            // Add the root.render() method to render your React code to the DOM.
             const app = document.getElementById('app');
- 
-            // Create a new H1 element
-            const header = document.createElement('h1');
+            const root = ReactDOM.createRoot(app);
+            root.render(<h1>Develop. Preview. Ship.</h1>);
 
-            // Create a new text node for the H1 element
-            const text = 'Develop. Preview. Ship.';
-            const headerContent = document.createTextNode(text);
-
-            // Append the text to the H1 element
-            header.appendChild(headerContent);
-
-            // Place the H1 element inside the div
-            app.appendChild(header);
         </script>
 
     </body>
