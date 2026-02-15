@@ -23,16 +23,16 @@
             // Add the root.render() method to render your React code to the DOM.
             const app = document.getElementById('app');
 
-            //React components should be capitalized to distinguish them from plain HTML and JavaScript:
-            function Header() {
-                return <h1>Develop. Preview. Ship.</h1>;
+            //The child component, can accept those props as its first function parameter:
+            function Header({ title }) {
+                console.log(title); // { title: "React" }
+                return <h1> { title } </h1>;
             }
 
             function HomePage() {
                 return (
                     <div>
-                      {/* Nesting the Header component */}
-                      <Header />
+                        <Header title="React" />
                     </div>
                 );
             }
