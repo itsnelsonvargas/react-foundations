@@ -1,0 +1,14 @@
+React has a set of functions called hooks
+
+**Hooks** allow you to add additional logic such as state to your components. 
+You can think of state as any information in your UI that changes over time, usually triggered by user interaction.
+
+You can use **state** to store and increment the number of times a user has clicked the "Like" button. 
+In fact, the React hook used to manage state is called: **useState()**
+
+Add **useState()** to your project. 
+It returns an array, and you can access and use those array values inside your component using **array destructuring**:
+
+Manage State:
+1. [Adding interactivity](https://react.dev/learn/adding-interactivity)
+2. [Managing State](https://react.dev/learn/managing-state)
